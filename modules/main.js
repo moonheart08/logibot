@@ -1,5 +1,5 @@
 module.exports = (env) => {
     env.registerCommand('ping',(msg)=>{
-        msg.reply("Pong!");
+        msg.msg.reply("Pong!");
     });
 };

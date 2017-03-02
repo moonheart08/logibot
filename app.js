@@ -26,6 +26,7 @@ async function init() {
             registerCommand: registerCommand
         });
     client.on('message', msg => {
+        console.log(msg.content);
         let parsed = {};
         parsed.msg = msg;
         let split = msg.content.split(" ");
@@ -33,9 +34,11 @@ async function init() {
         if (cmd.indexOf('!') != 0) {
             return;
         }
-        cmd = cmd.slice(1,cmd.length-1);
+        cmd = cmd.slice(1,cmd.length);
+        console.log(cmd);
         parsed.args = split;
         if (commands[cmd.toLowerCase()]) {
+            console.log("command!");
             commands[cmd.toLowerCase()](parsed,client);
         }
     });
