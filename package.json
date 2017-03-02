@@ -1,0 +1,29 @@
+{
+  "name": "logibot",
+  "version": "1.0.0",
+  "description": "Factorio Discord Bot",
+  "main": "app.js",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "discord.js": "^11.0.0",
+    "factorio-blueprint": "^1.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonheart08/logibot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "moonheart08",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/moonheart08/logibot/issues"
+  },
+  "homepage": "https://github.com/moonheart08/logibot#readme"
+}
