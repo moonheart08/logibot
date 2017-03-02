@@ -44,13 +44,12 @@ module.exports = (env) => {
                 console.log("Bing!");
                 let name = encodeURIComponent(x.join(" "));
                 let res = JSON.parse(await rp(`https://mods.factorio.com/api/mods?q=${name}&page_size=30&page=1&order=top`));
+                console.log(res.results[0]);
                 embed.addField(res.results[0].title,
-                `**Name**: ${res.results[0].title}
-**Description**: ${res.results[0].summary}
+`**Description**: ${res.results[0].summary}
 **Owner**: ${res.results[0].owner}
-**Homepage**: ${res.results[0].homepage}
-**Versions Supported**: ${res.results[0].game_versions.toString()}`);
-                console.log(res);
+**Mod Page**: https://mods.factorio.com/mods/${res.results[0].owner}/${res.results[0].name}
+**Versions Supported**: ${res.results[0].latest_release.info_json.factorio_version}`);
                 
             }
         }
