@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node --harmony app.js"
+    "start": "nodejs --harmony app.js"
   },
   "repository": {
     "type": "git",
