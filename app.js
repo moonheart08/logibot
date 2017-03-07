@@ -42,8 +42,8 @@ async function init() {
             commands[cmd.toLowerCase()](parsed,client);
         }
     });
-    console.log((await fs.readFileAsync(`${__dirname}/token`)).toString());
-    await client.login((await fs.readFileAsync(`${__dirname}/token`)).toString());
+    console.log((await fs.readFileAsync(`${__dirname}/token`)).toString().replace(/\s/g, ''));
+    await client.login((await fs.readFileAsync(`${__dirname}/token`)).toString().replace(/\s/g, ''));
     console.log(client.user.id);
     
 }
