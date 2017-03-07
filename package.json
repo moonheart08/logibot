@@ -16,7 +16,7 @@
     "node": "7.6.0"
   },
   "scripts": {
-    "start": "nodejs --harmony app.js"
+    "start": "node --harmony app.js"
   },
   "repository": {
     "type": "git",
